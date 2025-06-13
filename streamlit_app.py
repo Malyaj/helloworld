@@ -50,6 +50,6 @@ scatter = sns.scatterplot(
     legend='brief'
 )
 
-plt.title("Seaborn Scatter Plot with Size and Color Encoding")
-plt.show()
-
+# plt.title("Seaborn Scatter Plot with Size and Color Encoding")
+# plt.show()
+st.pyplot(plt.gcf())
