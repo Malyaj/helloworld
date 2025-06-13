@@ -38,7 +38,7 @@ df2 = pd.DataFrame(
     columns=['a', 'b', 'c']
 )
 
-Create scatter plot using seaborn
+# Create scatter plot using seaborn
 plt.figure(figsize=(10, 6))
 scatter = sns.scatterplot(
     data=df2,
