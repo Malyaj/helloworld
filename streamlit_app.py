@@ -1,6 +1,6 @@
 import streamlit as st
-# import seaborn as sns
-# import matplotlib.pyplot as plt
+import seaborn as sns
+import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
@@ -33,23 +33,23 @@ st.write('Below is a dataframe', df, 'Above is a dataframe')
 
 # Example 5
 
-# df2 = pd.DataFrame(
-#     np.random.rand(200, 3),  # Use np.random.rand instead of np.random(200, 3)
-#     columns=['a', 'b', 'c']
-# )
+df2 = pd.DataFrame(
+    np.random.rand(200, 3),  # Use np.random.rand instead of np.random(200, 3)
+    columns=['a', 'b', 'c']
+)
 
-# Create scatter plot using seaborn
-# plt.figure(figsize=(10, 6))
-# scatter = sns.scatterplot(
-#     data=df2,
-#     x='a', y='b',
-#     size='c',
-#     hue='c',
-#     palette='viridis',
-#     sizes=(20, 200),  # Adjust point size scale
-#     legend='brief'
-# )
+Create scatter plot using seaborn
+plt.figure(figsize=(10, 6))
+scatter = sns.scatterplot(
+    data=df2,
+    x='a', y='b',
+    size='c',
+    hue='c',
+    palette='viridis',
+    sizes=(20, 200),  # Adjust point size scale
+    legend='brief'
+)
 
-# plt.title("Seaborn Scatter Plot with Size and Color Encoding")
-# plt.show()
+plt.title("Seaborn Scatter Plot with Size and Color Encoding")
+plt.show()
 
